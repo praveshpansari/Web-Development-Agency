@@ -1,0 +1,169 @@
+/* General setup */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  
+  header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+  }
+  
+  /* import fonts*/
+  @font-face {
+    font-family: 'literata_bookregular';
+    src: url('../fonts/literatabook-webfont.woff2') format('woff2'),
+         url('../fonts/literatabook-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'source_sans';
+    src: url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+  /* WRITE YOUR CODE BELOW HERE */
+
+  html {
+      font-size: 10px;
+      font-family: "literata_bookregular", serif;
+  }
+
+  h1 {
+      text-align: center;
+      font-size: 5rem;
+  }
+
+  h2 {
+      font-size: 3.2rem;
+  }
+
+  h1, h2 {
+      font-family: source_sans, sans-serif;
+      letter-spacing: 2px;
+  }
+
+  section h2 + p{
+      text-indent: 20px;
+  }
+
+  p, li{
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    word-spacing: 3px;
+    font-size: 1.6em;
+  }
+
+  /*links*/
+
+   a {
+    outline: none;
+    text-decoration: none;
+    border-bottom: 1px solid;
+  }
+
+  a:link{
+    color: #a66;
+  }
+
+  a:visited{
+    color: rgb(100, 59, 59);
+  }
+
+  a:focus ,a:hover{
+    border-bottom: none;
+  }
+
+  a:active{
+    text-shadow: 0px 0px 4px darkred;
+    font-weight: bold;
+  }
+
+  a[href*="http"]{
+    background:url(../images/external-link-52.png) no-repeat 100% 0;
+    background-size: 19px 19px;
+    padding-right:24px;
+  }
+
+  ul, ol {
+      margin:16px 0;
+  }
+
+  ul {
+      list-style-type: square;
+  }
+
+  nav ul {
+      padding-left:0;
+      margin-top: 4rem;
+  }
+
+  nav li {
+      list-style-type: none;
+      margin-bottom: 2rem;
+  }
+
+  nav li a {
+      text-decoration: none;
+      border-bottom: none;
+      display:inline-block;
+      width:100%;
+      line-height: 3.5;
+      text-align: center;
+      font-size: 1.8rem;
+      background:#a66;
+  }
+
+  nav li a:link, nav li a:visited{
+    color:black;
+  }
+
+  nav li a:focus, nav li a:hover {
+    color: white;
+    background: #a66;
+  }
+  
+  nav li a:active {
+    color: #a66;
+    background: transparent;
+    border: 1px solid #a66;
+  }

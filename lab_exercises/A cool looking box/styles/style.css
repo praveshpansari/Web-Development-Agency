@@ -1,0 +1,22 @@
+html {
+    font-family: sans-serif;
+  }
+  
+  /* Your CSS below here */
+p {
+    width: 225px;
+    line-height: 3;
+    margin: auto;
+    text-align: center;
+    font-size: 1.125rem;
+    /*Default font size is 16px. So rem here = 16px. For 18px, the size equals to 18/16rem=1.125rem*/
+    background-color: magenta;
+    color: magenta;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 13px;
+    border:1px solid rgb(200,0,200);
+    background-image: linear-gradient(to bottom right, rgba(0,0,0,0.2), rgba(0,0,0,0.2) 30%, rgba(0,0,0,0));
+    box-shadow: 3px 3px 6px black,
+               inset -3px -3px 3px rgba(255,255,255,0.5),
+               inset 3px 3px 3px rgba(0,0,0,0.5);
+}

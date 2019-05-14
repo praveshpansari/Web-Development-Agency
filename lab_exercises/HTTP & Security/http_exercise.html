@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>http</title>
+</head>
+
+<body style="width:1200px;margin:0 auto;margin-top:50px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 20px;">
+    <h1 style="margin-bottom:50px;">HTTP EXERCISES</h1>
+    <ol>
+        <li><b>What is the Hypertext Transfer Protocol (HTTP)?</b>
+            <p>Hypertext Transfer Protocol (HTTP) is an application-layer protocol for transmitting hypermedia
+                documents, such
+                as HTML.</p>
+        </li>
+
+        <li><b>Why is HTTP called a stateless protocol?</b>
+            <p>HTTP is called a stateless protocol because the server does not keep any data (state) between two
+                requests.</p>
+        </li>
+
+        <li><b>Describe the three phases of establishing a session using client-server protocols such as HTTP</b>
+            <p>In client-server protocols, like HTTP, sessions consist of three phases:
+                <ol>
+                    <li>The client establishes a TCP connection (or the appropriate connection if the transport layer is
+                        not
+                        TCP).</li>
+                    <li>The client sends its request, and waits for the answer.</li>
+                    <li>The server processes the request, sending back its answer, providing a status code and
+                        appropriate data.
+                    </li>
+                </ol>
+            </p>
+        </li>
+
+        <li><b>Describe the parameters on a get and post request.</b>
+            <p>The GET method requests a representation of the specified resource. Requests using GET should only
+                retrieve data.<br>The POST method is used to submit an entity to the specified resource, often causing a
+                change in state or side effects on the server.</p>
+        </li>
+
+        <li><b>What are the HTTP response status code and What do the HTTP status codes, 200, and 404 indicate?</b>
+            <p>HTTP response status codes indicate whether a specific HTTP request has been successfully
+                completed.<br>The HTTP 200 OK success status response code indicates that the request has
+                succeeded.<br>The HTTP 400 Bad Request response status code indicates that the server cannot or will not
+                process the request due to something that is perceived to be a client error.</p>
+        </li>
+
+        <li><b>What are HTTP cookies? Give an example.</b>
+            <p>An HTTP cookie (web cookie, browser cookie) is a small piece of data that a server sends to the user's
+                web browser. The browser may store it and send it back with the next request to the same server.
+                Typically, it's used to tell if two requests came from the same browser. For example, keeping a user
+                logged-in.</p>
+        </li>
+
+        <li><b>Why are cookies a security issue?</b>
+            <p>Cookies are often used in web application to identify a user and their authenticated session, so stealing
+                a cookie can lead to hijacking the authenticated user's session. Common ways to steal cookies include
+                Social Engineering or exploiting an XSS vulnerability in the application.</p>
+        </li>
+
+        <li><b>Describe session hijacking and XSS</b>
+            <p>Session hijacking occurs when an attacker takes over a valid session between two computers. The attacker steals a valid session ID in order to break into the system and snoop data.<br><br>XSS is a term used to describe a class of attacks that allow an attacker to inject client-side scripts through the website into the browsers of other users. Because the injected code comes to the browser from the site, the code is trusted and can do things like send the user's site authorization cookie to the attacker. When the attacker has the cookie, they can log into a site as though they were the user and do anything the user can, such as access their credit card details, see contact details, or change passwords.</p>
+        </li>
+
+        <li><b> Cross-site request forgery(CSRF)</b>
+            <p>CSRF attacks allow a malicious user to execute actions using the credentials of another user without that user’s knowledge or consent.
+                    This type of attack is best explained by example. John is a malicious user who knows that a particular site allows logged-in users to send money to a specified account using an HTTP POST request that includes the account name and an amount of money. John constructs a form that includes his bank details and an amount of money as hidden fields, and emails it to other site users (with the Submit button disguised as a link to a "get rich quick" site).
+                    If a user clicks the submit button, an HTTP POST request will be sent to the server containing the transaction details and any client-side cookies that the browser associated with the site (adding associated site cookies to requests is normal browser behavior). The server will check the cookies, and use them to determine whether or not the user is logged in and has permission to make the transaction.
+                    The result is that any user who clicks the Submit button while they are logged in to the trading site will make the transaction. John gets rich.</p>
+        </li>
+
+        <li><b>What are Cross-site HTTP requests (CORS) and what requests use CORS?</b>
+            <p>Cross-Origin Resource Sharing (CORS) is a mechanism that uses additional HTTP headers to tell a browser
+                to let a web application running at one origin (domain) have permission to access selected resources
+                from a server at a different origin. CORS are requested by:
+                <ol>
+                    <li>Invocations of the XMLHttpRequest or Fetch APIs in a cross-site manner.</li>
+                    <li>Web Fonts (for cross-domain font usage in @font-face within CSS), so that servers can deploy
+                        TrueType fonts that can only be cross-site loaded and used by web sites that are permitted to do
+                        so.</li>
+                    <li>WebGL textures.</li>
+                    <li>Images/video frames drawn to a canvas using drawImage().</li>
+                </ol>
+            </p>
+        </li>
+
+    </ol>
+</body>
+
+</html>
