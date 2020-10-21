@@ -1,2 +1,2 @@
-Website url: https://m-nobody.github.io/Web-Development/
-Github url: https://github.com/M-Nobody/Web-Development
+Website url: https://praveshpansari.github.io/Web-Development
+Github url: https://github.com/praveshpansari/Web-Development
