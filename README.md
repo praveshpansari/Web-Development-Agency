@@ -1,7 +1,11 @@
-# Web-Development-Agency
-Static designer website
+# Mystic-Agency
+Static website for digital agency
 
-This is a static website designed for a digital solutions agency. Made using vanilla hmtl/css
+Mystic is a creative agency aiming at providing digital services like digital marketing, website and app
+development, branding and designing. It is a static website developed using vanilla web technologies like
+HTML, CSS & JS. Includes particle.js for reverse snow effect on the hero section, an eye catching theme with
+parallax scroll and beautiful animations. There is a home page, about page, contact page, pricing page and a
+login page.
 
 Link: https://praveshpansari.github.io/Web-Development-Agency/
 
